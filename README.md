@@ -7,6 +7,10 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 
 ## 📂 **Topics Covered**
 
+### 🛡️ **Introduction to Burp Suite**
+- [Burp Suite](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Introduction%20to%20Burp%20Suite/Burp%20Suite.md)
+---
+
 ### 🛡️ **Directory Traversal**
 - [Directory Traversal - Exploitation](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Directory%20Traversal%20Attacks/Directory%20Traversal%20Attacks.md)
 
