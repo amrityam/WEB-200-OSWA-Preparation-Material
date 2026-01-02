@@ -29,3 +29,10 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 
 - [SSTI Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Server-side%20Template%20Injection/SSTI%20Case%20Study.md)
 ---
+
+
+### 🛡️ **Server-side Request Forgery (SSRF)**
+- [SSRF](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Server-side%20Request%20Forgery/SSRF.md)
+
+- [SSRF Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Server-side%20Request%20Forgery/SSRF%20Case%20Study.md)
+---
