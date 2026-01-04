@@ -40,3 +40,10 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 
 - [SSRF Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Server-side%20Request%20Forgery/SSRF%20Case%20Study.md)
 ---
+
+
+### 🛡️ **Command Injection**
+- [Command Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Command%20Injection/Command%20Injection.md)
+
+- [Command Injection Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Command%20Injection/Command%20Injection%20Case%20Study.md)
+---
