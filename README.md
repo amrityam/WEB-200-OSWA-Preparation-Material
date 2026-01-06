@@ -18,9 +18,11 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 ---
 
 ### 🛡️ **Cross-Site Scripting (XSS)**
-- [Cross-Site Scripting - Exploitation](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/XSS/Cross-Site%20Scripting%20Exploitation%20and%20Case%20Study/Cross-Site%20Scripting%20-%20Exploitation.md)
+- [Cross-Site Scripting - Discovery](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/XSS/Cross-Site%20Scripting%20Introduction%20and%20Discovery/XSS%20Discovery.md)
 
-- [Case Study: Shopizer Reflected XSS](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/XSS/Cross-Site%20Scripting%20Exploitation%20and%20Case%20Study/Case%20Study%3A%20Shopizer%20Reflected%20XSS.md)
+- [Cross-Site Scripting - Exploitation](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/XSS/Cross-Site%20Scripting%20Exploitation/XSS%20-%20Exploitation.md)
+
+- [Cross-Site Scripting - Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/XSS/Cross-Site%20Scripting%20Exploitation/XSS%20Case%20Study.md)
 ---
 
 ### 🛡️ **XML External Entities**
