@@ -47,3 +47,10 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 
 - [Command Injection Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Command%20Injection/Command%20Injection%20Case%20Study.md)
 ---
+
+
+### 🛡️ **Insecure Direct Object Referencing Case Study**
+- [IDOR](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Insecure%20Direct%20Object%20Referencing/IDOR.md)
+
+- [IDOR Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Insecure%20Direct%20Object%20Referencing/IDOR%20Case%20Study.md)
+---
