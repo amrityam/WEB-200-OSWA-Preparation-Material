@@ -56,3 +56,11 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 
 - [IDOR Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Insecure%20Direct%20Object%20Referencing/IDOR%20Case%20Study.md)
 ---
+
+### 🛡️ **SQL Injection**
+- [Introduction to SQL](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/SQL%20Injection/Introduction%20to%20SQL.md)
+
+- [SQL Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/SQL%20Injection/SQL%20Injection.md)
+
+- [SQL Injection Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/SQL%20Injection/SQL%20Injection%20Case%20Study.md)
+---
