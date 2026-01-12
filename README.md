@@ -64,3 +64,7 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 
 - [SQL Injection Case Study](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/SQL%20Injection/SQL%20Injection%20Case%20Study.md)
 ---
+
+### 🛡️ **Cross-Origin Attacks**
+- [Cross-Origin Attacks](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Cross-Origin%20Attacks/Cross-Origin%20Attacks.md)
+---
