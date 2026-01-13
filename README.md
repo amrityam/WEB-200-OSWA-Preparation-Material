@@ -75,5 +75,5 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 ---
 
 ### 🛡️ **Tools**
-- [Cross-Origin Attacks](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Tools/Tools.md)
+- [Tools](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Tools/Tools.md)
 ---
