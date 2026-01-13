@@ -11,6 +11,11 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 - [Burp Suite](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Introduction%20to%20Burp%20Suite/Burp%20Suite.md)
 ---
 
+
+### 🛡️ **Web Application Enumeration Methodology**
+- [Web Application Enumeration Methodology](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Web%20Application%20Enumeration%20Methodology/Web%20Application%20Enumeration%20Methodology.md)
+
+---
 ### 🛡️ **Directory Traversal**
 - [Directory Traversal - Exploitation](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Directory%20Traversal%20Attacks/Directory%20Traversal%20Attacks.md)
 
