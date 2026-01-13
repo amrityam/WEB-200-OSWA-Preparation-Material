@@ -73,3 +73,7 @@ A collection of notes to help prepare for the **Offensive Security Web Assessor 
 ### 🛡️ **Cross-Origin Attacks**
 - [Cross-Origin Attacks](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Cross-Origin%20Attacks/Cross-Origin%20Attacks.md)
 ---
+
+### 🛡️ **Tools**
+- [Cross-Origin Attacks](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Tools/Tools.md)
+---
