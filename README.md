@@ -3,6 +3,12 @@
 
 A collection of notes to help prepare for the **Offensive Security Web Assessor (OSWA)** certification.
 
+### **Connect VPN**
+```
+cd /home/amrityam/kali/offsec
+
+sudo openvpn universal.ovpn
+```
 ---
 
 ## 📂 **Topics Covered**

