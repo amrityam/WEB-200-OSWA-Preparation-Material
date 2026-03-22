@@ -21,7 +21,7 @@ gobuster dir -u 192.168.118.121 -w /usr/share/wordlists/dirb/common.txt
 
 ## **Use custom wordlist to bruteforce password**
 
-- Use Custom word list generator to brutefoece password.
+- Use Custom word list generator to bruteforce password.
 
 ``
 cewl -d 2 -m 5 -w bambi_custom_passwords.txt http://192.168.118.121

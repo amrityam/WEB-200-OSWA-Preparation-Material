@@ -89,7 +89,7 @@ If the application is vulnerable to SQL and constructs a query with our input, a
 
 ![asio10](images/asio10.png) 
 
-## **Use SQLmap to confirm if SQL injecttion exists**
+## **Use SQLmap to confirm if SQL injection exists**
 
 - Save the from burpsuite as postrequest.txt.
 
