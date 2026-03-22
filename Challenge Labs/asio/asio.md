@@ -91,7 +91,7 @@ If the application is vulnerable to SQL and constructs a query with our input, a
 
 ## **Use SQLmap to confirm if SQL injection exists**
 
-- Save the from burpsuite as postrequest.txt.
+- Save the request in burpsuite as postrequest.txt
 
 ```
 sqlmap -r postrequest.txt --dbms= "mssql" --batch --flush-session
