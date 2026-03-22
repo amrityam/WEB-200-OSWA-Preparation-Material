@@ -83,3 +83,12 @@ sudo openvpn universal.ovpn
 ### 🛡️ **Tools**
 - [Tools](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Tools/Tools.md)
 ---
+
+
+## 🔬 **Challenge Labs**
+
+- [Asio](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Asio/asio.md)
+
+- [Bambi](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bambi/bambi.md)
+
+---
