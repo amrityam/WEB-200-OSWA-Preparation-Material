@@ -87,7 +87,7 @@ sudo openvpn universal.ovpn
 
 ## 🔬 **Challenge Labs**
 
-- [Asio](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Asio/asio.md)
+- [Asio](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/asio/asio.md)
 
 - [Bambi](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bambi/bambi.md)
 
