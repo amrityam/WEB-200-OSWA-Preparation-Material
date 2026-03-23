@@ -93,4 +93,6 @@ sudo openvpn universal.ovpn
 
 - [Piano Protocol](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Piano%20Protocol/piano%20protocol.md)
 
+- [Bubo](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bubo/bubo.md)
+
 ---
