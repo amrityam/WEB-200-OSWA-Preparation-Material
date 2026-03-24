@@ -95,4 +95,6 @@ sudo openvpn universal.ovpn
 
 - [Bubo](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bubo/bubo.md)
 
+- [Glaucidium](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Glaucidium/glaucidium.md)
+
 ---
