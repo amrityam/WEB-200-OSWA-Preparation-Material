@@ -11,6 +11,15 @@ sudo nmap -O -Pn 192.168.236.121
 
 ## **Run Gobuster for directory/file enumeration**
 ```
+gobuster dir -u 192.168.236.121 -w /usr/share/seclists/Discovery/Web-Content/common.txt
+```
+This gives /admin endpoint.
+
+![gobuster-common](images/gobuster-common.png) 
+
+- In order to find more hidden directories for this PHP application, use raft-mediumm-files.txt.
+
+```
 gobuster dir -u 192.168.236.121 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files.txt
 ```
 ![gobuster](images/gobuster.png) 
