@@ -99,4 +99,26 @@ sudo openvpn universal.ovpn
 
 - [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md)
 
+- [Mentor](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Mentor/mentor.md)
+
+---
+
+## Search Flag
+
+#### Linux:
+```
+find / -type f -name "proof.txt" 2>/dev/null
+```
+
+#### Windows CMD:
+```
+dir C:\proof.txt /s /b 2>nul
+or
+where /r C:\ proof.txt
+```
+
+#### Windows PowerShell:
+```
+Get-ChildItem C:\ -Recurse -File -Filter "proof.txt" -ErrorAction SilentlyContinue
+```
 ---

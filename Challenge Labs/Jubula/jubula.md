@@ -83,6 +83,12 @@ Payload:
 
 ![ssti_reverse_shell](images/ssti_reverse_shell.png)
 
+- Once we get reverse shell, we can use below command to serach the location of proof.txt flag and then we can read it.
+
+```
+find / -type f -name "proof.txt" 2>/dev/null
+```
+
 ![reverse_shell_proof.txt_flag](images/reverse_shell_proof.txt_flag.png) 
 
 ### proof.txt flag: 622ae4c441959ece2a5c5aacd2afbef0 
