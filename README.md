@@ -105,7 +105,7 @@ sudo openvpn universal.ovpn
 
 - [Fullmoon](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Fullmoon/fullmoon.md)
 
-- [Fullmoon](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Screamin%20Firehawk/screaminfirehawk.md)
+- [Screamin Firehawk](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Screamin%20Firehawk/screaminfirehawk.md)
 
 
 ---
@@ -127,5 +127,10 @@ where /r C:\ proof.txt
 #### Windows PowerShell:
 ```
 Get-ChildItem C:\ -Recurse -File -Filter "proof.txt" -ErrorAction SilentlyContinue
+```
+
+#### Command to kill running process if port is already in use:
+```
+sudo kill -9 $(sudo lsof -t -i :<port>)
 ```
 ---
