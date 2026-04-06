@@ -107,6 +107,7 @@ sudo openvpn universal.ovpn
 
 - [Screamin Firehawk](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Screamin%20Firehawk/screaminfirehawk.md)
 
+- [Solarmedical](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Solarmedical/solarmedical.md)
 
 ---
 
