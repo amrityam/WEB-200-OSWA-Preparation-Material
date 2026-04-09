@@ -135,3 +135,8 @@ Get-ChildItem C:\ -Recurse -File -Filter "proof.txt" -ErrorAction SilentlyContin
 sudo kill -9 $(sudo lsof -t -i :<port>)
 ```
 ---
+
+## Useful Payloads
+- [Enumeration](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Enumeration.md)
+- [XSS](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XSS.md)
+---
