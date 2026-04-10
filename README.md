@@ -139,4 +139,8 @@ sudo kill -9 $(sudo lsof -t -i :<port>)
 ## Useful Payloads
 - [Enumeration](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Enumeration.md)
 - [XSS](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XSS.md)
+- [SQL Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SQL%20Injection.md)
+- [Directory Traversal](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Directory%20Traversal.md)
+- [XML external entity (XXE) injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XXE.md)
+- [Server Side Template Injection (SSTI)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSTI.md)
 ---
