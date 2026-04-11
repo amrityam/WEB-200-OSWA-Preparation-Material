@@ -143,4 +143,5 @@ sudo kill -9 $(sudo lsof -t -i :<port>)
 - [Directory Traversal](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Directory%20Traversal.md)
 - [XML external entity (XXE) injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XXE.md)
 - [Server Side Template Injection (SSTI)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSTI.md)
+- [Server-side Request Forgery (SSRF)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSRF.md)
 ---

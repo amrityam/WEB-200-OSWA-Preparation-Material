@@ -20,7 +20,7 @@ This gives some interesting endpoints such as /admin,/login which those requires
 
 ## **Exploit SSRF to bypass access controls and retrieve sensitive data**
 
-- In Free Demo page, there is an input to provide wensite url, so try to test for SSRF for this input.
+- In Free Demo page, there is an input to provide website url, so try to test for SSRF for this input.
 
 ![free_demo_page](images/free_demo_page.png) 
 
