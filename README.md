@@ -138,15 +138,28 @@ sudo kill -9 $(sudo lsof -t -i :<port>)
 
 ## Useful Payloads
 - [Enumeration](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Enumeration.md)
-- [XSS](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XSS.md)
-- [SQL Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SQL%20Injection.md)
-- [Directory Traversal](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Directory%20Traversal.md)
-- [XML external entity (XXE) injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XXE.md)
-- [Server Side Template Injection (SSTI)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSTI.md)
-- [Server-side Request Forgery (SSRF)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSRF.md)
-- [Command Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Command%20Injection.md)
----
 
+- [XSS](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XSS.md)
+
+- [SQL Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SQL%20Injection.md)
+
+- [Directory Traversal](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Directory%20Traversal.md)
+
+- [XML external entity (XXE) injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XXE.md)
+
+- [Server Side Template Injection (SSTI)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSTI.md)
+
+- [Server-side Request Forgery (SSRF)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSRF.md)
+
+- [Command Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Command%20Injection.md)
+
+---
+## Practice Portswigger Labs
+- [All Labs](https://portswigger.net/web-security/all-labs)
+
+- [Learning Paths](https://portswigger.net/web-security/learning-paths)
+
+---
 ## Write ups:
 **Proving Grounds Boxes**      
 - [FunBoxEasyEnum](https://infosecwriteups.com/funbox-7-easyenum-walkthrough-vulnhub-3c1ef0f1c2ef)
