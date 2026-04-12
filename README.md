@@ -144,4 +144,33 @@ sudo kill -9 $(sudo lsof -t -i :<port>)
 - [XML external entity (XXE) injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/XXE.md)
 - [Server Side Template Injection (SSTI)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSTI.md)
 - [Server-side Request Forgery (SSRF)](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/SSRF.md)
+- [Command Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Command%20Injection.md)
+---
+
+## Write ups:
+**Proving Grounds Boxes**      
+- [FunBoxEasyEnum](https://infosecwriteups.com/funbox-7-easyenum-walkthrough-vulnhub-3c1ef0f1c2ef)
+
+- [Inclusiveness](https://cyberarri.com/2024/06/16/inclusiveness-pg-play-writeup/)
+
+
+- [Potato](https://medium.com/@iaw0ken/offsec-potato-writeup-6fa017f8e45c)
+
+- [Shakabra](https://sanaullahamankorai.medium.com/proving-grounds-play-shakabrah-walkthrou-92fae18c30ac)
+
+- [Sumo](https://www.hackingarticles.in/sumo-1-vulnhub-walkthrough/)
+
+- [Hawat](https://medium.com/@Dpsypher/proving-grounds-practice-hawat-3c4d2c388d7f)
+
+- [Interface](https://medium.com/@pk2212/htb-interface-writeup-walkthrough-edf6f0bfba64)
+
+
+**Hack The Box**        
+- [Pilgrimage](https://ctf.got-hacked.wtf/posts/H4-L0-HTB-Pilgrimage)
+
+- [PC](https://ctf.got-hacked.wtf/posts/H4-L0-HTB-PC/)
+
+- [Soccer](https://ctf.got-hacked.wtf/posts/h4-H0-HTB-Soccer/)
+
+- [Precious](https://ctf.got-hacked.wtf/posts/H4-L0-HTB-Precious/)
 ---

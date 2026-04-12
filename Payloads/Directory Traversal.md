@@ -1,4 +1,4 @@
-# **Directory Traversal.md**
+# **Directory Traversal**
 
 Test for directory traversal attacks whenever you find user-controllable inputs that influence file access, especially in URL parameters or form inputs that specify files or directories.
 
