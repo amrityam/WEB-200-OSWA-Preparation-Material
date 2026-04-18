@@ -153,6 +153,8 @@ sudo kill -9 $(sudo lsof -t -i :<port>)
 
 - [Command Injection](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/Command%20Injection.md)
 
+- [CSRF](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Payloads/CSRF.md)
+
 ---
 ## Practice Portswigger Labs
 - [All Labs](https://portswigger.net/web-security/all-labs)

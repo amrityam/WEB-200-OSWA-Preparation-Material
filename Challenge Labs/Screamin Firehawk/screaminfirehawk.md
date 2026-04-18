@@ -66,7 +66,7 @@ After decoding it using URL, we will get the cookie.
 
 ![fuzz_type_using_intruder](images/fuzz_type_using_intruder.png)
 
-which means using type=100, the admin accout can be created. But with current test user we are we can't create an admin user.
+which means using type=100, the admin account can be created. But with current test user we are we can't create an admin user.
 So we need to use CSRF payload to trick the admin user to execute the request to create an admin account for us.
 
 - Submit below CSRF payload on text area field
