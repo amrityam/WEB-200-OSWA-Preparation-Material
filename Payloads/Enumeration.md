@@ -35,3 +35,14 @@ cewl -d 2 -m 5 -w custom_passwords_test.txt http://<IP>
 ```
 ffuf -w /home/amrityam/kali/offsec/playground/custom_passwords_test.txt -u http://192.168.228.121/dev/index.php -X POST -d 'username=bob&password=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded'
 ```
+
+### FUZZ GET/POST requests
+```
+ffuf -c -w /usr/share/seclists/Fuzzing/5-digits-00000-99999.txt -u http://192.168.206.121/scientific/repository/data/FUZZ -e .txt,.pdf,.md -mc 200,301,302 -t 50
+```
+
+OR
+
+```
+wfuzz -c -z file,/usr/share/seclists/Fuzzing/5-digits-00000-99999.txt -z file,/usr/share/seclists/Fuzzing/extensions-most-common.fuzz.txt --hc 404 http://192.168.189.121/scientific/repository/data/FUZZFUZ2Z
+```

