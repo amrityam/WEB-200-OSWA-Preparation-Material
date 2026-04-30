@@ -8,7 +8,7 @@ Test for directory traversal attacks whenever you find user-controllable inputs 
 
 or
 
-/../../../../../../../etc/passwd
+../../../../../../../etc/passwd
 ```
 **Examples**
 ```

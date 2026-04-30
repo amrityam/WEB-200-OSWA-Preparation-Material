@@ -88,6 +88,8 @@ nc -nlvp 8090
 - Now you can get the reverse shell. There is a proof.txt file is present. Now read that flag.   
 
 ![bambi_proof.txt_flag](images/bambi_proof.txt_flag.png)
+
+![bambi_ci_proof](images/bambi_ci_proof.png)
    
 ### proof.txt flag: 3ab8fab58993ff44dd0f2f8fde04b2e8
 
