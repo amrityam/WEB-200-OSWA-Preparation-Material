@@ -87,11 +87,11 @@ sudo openvpn universal.ovpn
 
 ## 🔬 **Challenge Labs**
 
-- [Asio](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/asio/asio.md)
+- [Asio](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/asio/asio.md) - Directory Traversal (Read API token from Spring Boot properties file) + SQL Injection (Use sqlmap to get reverse shell from delete message request or from delete Newsletter subscriptions)
 
 - [Bambi](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bambi/bambi.md) - Bruteforce Password using custom wordlist + RCE through Command Injection
 
-- [Piano Protocol](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Piano%20Protocol/piano%20protocol.md)
+- [Piano Protocol](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Piano%20Protocol/piano%20protocol.md) - SQL Injection on login page to retrieve admin credentials through sqlmap +  Directory traversal to access sensitive files like id_rsa + Gain SSH access using the retrieved private key (port-2222)
 
 - [Bubo](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bubo/bubo.md) - IDOR using Fuzz technique (Find hidden PDF file endpoint) + RCE through Command Injection(zipPass)
 
@@ -123,6 +123,9 @@ find / -type f -name "proof.txt" 2>/dev/null
 dir C:\proof.txt /s /b 2>nul
 or
 where /r C:\ proof.txt
+
+# To read the content of proof.txt file
+type proof.txt
 ```
 
 #### Windows PowerShell:
