@@ -89,19 +89,19 @@ sudo openvpn universal.ovpn
 
 - [Asio](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/asio/asio.md)
 
-- [Bambi](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bambi/bambi.md)
+- [Bambi](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bambi/bambi.md) - Bruteforce Password using custom wordlist + RCE through Command Injection
 
 - [Piano Protocol](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Piano%20Protocol/piano%20protocol.md)
 
-- [Bubo](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bubo/bubo.md)
+- [Bubo](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bubo/bubo.md) - IDOR using Fuzz technique (Find hidden PDF file endpoint) + RCE through Command Injection(zipPass)
 
 - [Glaucidium](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Glaucidium/glaucidium.md)
 
-- [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md)
+- [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md) - XSS (session hijacking) + SSTI (RCE)
 
 - [Mentor](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Mentor/mentor.md)
 
-- [Construction](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Construction/construction.md)
+- [Construction](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Construction/construction.md) XSS (blind XSS) + Command Injection (Chaining XSS to CommandInjection for RCE)
 
 - [Fullmoon](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Fullmoon/fullmoon.md)
 
