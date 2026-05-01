@@ -6,6 +6,9 @@
 - When you have access to template editing features.
 - When error messages or output suggest template syntax is being processed.
 
+#### **Template Injection Table** 
+https://cheatsheet.hackmanit.de/template-injection-table/index.html
+
 #### **Common tags to test for SSTI **
 ```
 {{7*7}}

