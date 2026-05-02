@@ -133,3 +133,9 @@ print("\n[!] Another option that might work via something like BURP:")
 print(another_option(encoded_payload))
 ```
 
+
+#### Format JSON using jq
+```
+jq -r 'fromjson' escaped.json > clean.json
+```
+

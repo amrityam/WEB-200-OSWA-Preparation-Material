@@ -95,7 +95,7 @@ sudo openvpn universal.ovpn
 
 - [Bubo](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bubo/bubo.md) - IDOR using Fuzz technique (Find hidden PDF file endpoint) + RCE through Command Injection(zipPass)
 
-- [Glaucidium](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Glaucidium/glaucidium.md)
+- [Glaucidium](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Glaucidium/glaucidium.md) - Create a new guest account + SSRF in the CV upload feature to retrieve sensitive API + Using SSRF call the API to create an admin account using gopher protocol + Mako SSTI to get reverse shell
 
 - [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md) - XSS (session hijacking) + SSTI (RCE)
 

