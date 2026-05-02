@@ -103,7 +103,7 @@ sudo openvpn universal.ovpn
 
 - [Construction](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Construction/construction.md) XSS (blind XSS) + Command Injection (Chaining XSS to CommandInjection for RCE)
 
-- [Fullmoon](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Fullmoon/fullmoon.md)
+- [Fullmoon](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Fullmoon/fullmoon.md) - Using SSRF and IDOR, manipulate the screenshot functionality to access restricted admin resources, revealing login credentials. Then use EJS SSTI to perform remote code execution, need to bypass filtering logic of specific keywords such as process, require, exec.
 
 - [Screamin Firehawk](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Screamin%20Firehawk/screaminfirehawk.md)
 

