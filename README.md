@@ -97,7 +97,7 @@ sudo openvpn universal.ovpn
 
 - [Glaucidium](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Glaucidium/glaucidium.md) - Create a new guest account + SSRF in the CV upload feature to retrieve sensitive API + Using SSRF call the API to create an admin account using gopher protocol + Mako SSTI to get reverse shell
 
-- [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md) - XSS (session hijacking) + SSTI using Twig template
+- [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md) - XSS (session hijacking) in Post Content text area + SSTI using Twig template
 
 - [Mentor](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Mentor/mentor.md) - Blind stored XSS + due httpOnly flag not able to steal cookie + Further enumerate to discover main.js file from dev/js folder which has addUser functionality + using XSS add an admin user + Identify XML export and import feature + Execute an XXE attack to read proof.txt flag
 
