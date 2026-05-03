@@ -24,7 +24,17 @@ gobuster dir -u <IP> -w /usr/share/wordlists/dirb/common.txt
 ```
 
 ```
+gobuster dir -u <IP> -w /usr/share/seclists/Discovery/Web-Content/common.txt
+```
+
+```
 gobuster dir -u <IP> -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files.txt
+```
+#### Check JS files in a folder
+```
+gobuster dir -u 192.168.236.125/dev -w /usr/share/seclists/Discovery/Web-Content/common.txt -x js -t 10
+
+gobuster dir -u 192.168.236.125/dev/js -w /usr/share/seclists/Discovery/Web-Content/common.txt -x js -t 10
 ```
 
 ### Use Custom word list generator to bruteforce password

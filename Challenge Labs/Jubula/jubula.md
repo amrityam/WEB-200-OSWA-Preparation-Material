@@ -24,8 +24,6 @@ gobuster dir -u 192.168.236.121 -w /usr/share/seclists/Discovery/Web-Content/raf
 ```
 ![gobuster](images/gobuster.png) 
 
-![post_content_page](images/post_content_page.png) 
-
 ### **Inject XSS payloads into the comment submission feature to hijack the admin’s session**
 
 - Create a xss.js file on kali machine and host it.

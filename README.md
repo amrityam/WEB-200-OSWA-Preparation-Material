@@ -99,7 +99,7 @@ sudo openvpn universal.ovpn
 
 - [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md) - XSS (session hijacking) + SSTI (RCE)
 
-- [Mentor](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Mentor/mentor.md)
+- [Mentor](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Mentor/mentor.md) - Blind stored XSS + due httpOnly flag not able to steal cookie + Further enumerate to discover main.js file from dev/js folder which has addUser functionality + using XSS add an admin user + Identify XML export and import feature + Execute an XXE attack to read proof.txt flag
 
 - [Construction](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Construction/construction.md) XSS (blind XSS) + Command Injection (Chaining XSS to CommandInjection for RCE)
 
