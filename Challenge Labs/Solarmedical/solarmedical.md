@@ -94,7 +94,7 @@ C:\backup
 ```
 ![test_copy](images/test_copy.png)
 
-- Now to test for commadn injection first try a simple command like whoami using this payload - 
+- Now to test for command injection first try a simple command like whoami using this payload - 
 `C:\backup"&whoami`. Now you can see the whoami command got executed.
 
 ```

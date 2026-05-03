@@ -65,6 +65,7 @@
 ```
 sqlmap -r post.txt -p username --os-shell
 ```
+Also try to remove value of parameter or set value as *.
 ---
 
 ## 6. OS Command Injection

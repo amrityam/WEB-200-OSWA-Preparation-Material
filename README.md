@@ -107,7 +107,7 @@ sudo openvpn universal.ovpn
 
 - [Screamin Firehawk](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Screamin%20Firehawk/screaminfirehawk.md) - Identified an XSS in the Special Request field of Book Flight. Although the httpOnly flag blocked session theft + The XSS was chained with a CSRF to abuse the register user flow + By enumerating the type parameter, it was found that type=100 creates an admin user, even though guests lack permission directly + A CSRF payload was crafted so that when an admin visits the XSS-triggered page, a new admin account is created silently + After logging in as admin, the Edit Flight Information page was found vulnerable to SQL injection via passengerCount, which was leveraged to place a PHP webshell in /var/tmp/ and access it to read the proof.txt flag.
 
-- [Solarmedical](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Solarmedical/solarmedical.md)
+- [Solarmedical](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Solarmedical/solarmedical.md) - In 'View Test Results' page, PatientName is vulnerable to SQL Injection + Exploit the SQL Injection vulnerability to extract admin username and password using sqlmap + Perform command injection via the backup page to bypass restrictions and read proof.txt flag.
 
 ---
 
