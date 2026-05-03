@@ -89,7 +89,7 @@ sudo openvpn universal.ovpn
 
 - [Asio](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/asio/asio.md) - Directory Traversal (Read API token from Spring Boot properties file) + SQL Injection (Use sqlmap to get reverse shell from delete message request or from delete Newsletter subscriptions)
 
-- [Bambi](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bambi/bambi.md) - Bruteforce Password using custom wordlist + RCE through Command Injection
+- [Bambi](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Bambi/bambi.md) - Bruteforce Password using custom wordlist + RCE through Command Injection (reverse shell using bash)
 
 - [Piano Protocol](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Piano%20Protocol/piano%20protocol.md) - SQL Injection on login page to retrieve admin credentials through sqlmap +  Directory traversal to access sensitive files like id_rsa + Gain SSH access using the retrieved private key (port-2222)
 
@@ -97,11 +97,11 @@ sudo openvpn universal.ovpn
 
 - [Glaucidium](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Glaucidium/glaucidium.md) - Create a new guest account + SSRF in the CV upload feature to retrieve sensitive API + Using SSRF call the API to create an admin account using gopher protocol + Mako SSTI to get reverse shell
 
-- [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md) - XSS (session hijacking) + SSTI (RCE)
+- [Jubula](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Jubula/jubula.md) - XSS (session hijacking) + SSTI using Twig template
 
 - [Mentor](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Mentor/mentor.md) - Blind stored XSS + due httpOnly flag not able to steal cookie + Further enumerate to discover main.js file from dev/js folder which has addUser functionality + using XSS add an admin user + Identify XML export and import feature + Execute an XXE attack to read proof.txt flag
 
-- [Construction](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Construction/construction.md) XSS (blind XSS) + Command Injection (Chaining XSS to CommandInjection for RCE)
+- [Construction](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Construction/construction.md) Blind XSS in Contact Us form + Use JavaScript to exfiltrate sensitive page content and discover the administrative dashboard URL + Exploit the server's backend command execution functionality by crafting malicious scripts (Chaining XSS to Command Injection for RCE)
 
 - [Fullmoon](https://github.com/amrityam/WEB-200-OSWA-Preparation-Material/blob/main/Challenge%20Labs/Fullmoon/fullmoon.md) - Using SSRF and IDOR, manipulate the screenshot functionality to access restricted admin resources, revealing login credentials. Then use EJS SSTI to perform remote code execution, need to bypass filtering logic of specific keywords such as process, require, exec.
 

